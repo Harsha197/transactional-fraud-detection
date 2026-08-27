@@ -1,0 +1,106 @@
+{
+  "dataset_records": 283726,
+  "duplicates_removed": 1081,
+  "fraud_count": 473,
+  "legit_count": 283253,
+  "fraud_rate_pct": 0.1667,
+  "best_model": "Random Forest",
+  "optimal_threshold": 0.7,
+  "best_model_precision": 0.9444,
+  "best_model_recall": 0.7158,
+  "best_model_f1": 0.8144,
+  "best_model_roc_auc": 0.9631,
+  "best_model_pr_auc": 0.805,
+  "best_model_tp": 68,
+  "best_model_fp": 4,
+  "best_model_fn": 27,
+  "best_model_tn": 56647,
+  "model_comparison": [
+    {
+      "Model": "Random Forest",
+      "Precision": 0.8861,
+      "Recall (Detection Rate)": 0.7368,
+      "F1 Score": 0.8046,
+      "ROC-AUC": 0.9631,
+      "PR-AUC (Avg Precision)": 0.805,
+      "False Positives (Alarms)": 9,
+      "False Negatives (Missed)": 25,
+      "Training Time (s)": 96.21
+    },
+    {
+      "Model": "XGBoost",
+      "Precision": 0.9,
+      "Recall (Detection Rate)": 0.7579,
+      "F1 Score": 0.8229,
+      "ROC-AUC": 0.975,
+      "PR-AUC (Avg Precision)": 0.7962,
+      "False Positives (Alarms)": 8,
+      "False Negatives (Missed)": 23,
+      "Training Time (s)": 7.74
+    },
+    {
+      "Model": "HistGradientBoosting",
+      "Precision": 0.4053,
+      "Recall (Detection Rate)": 0.8105,
+      "F1 Score": 0.5404,
+      "ROC-AUC": 0.9663,
+      "PR-AUC (Avg Precision)": 0.6892,
+      "False Positives (Alarms)": 113,
+      "False Negatives (Missed)": 18,
+      "Training Time (s)": 11.1
+    },
+    {
+      "Model": "Logistic Regression (Balanced)",
+      "Precision": 0.0551,
+      "Recall (Detection Rate)": 0.8737,
+      "F1 Score": 0.1036,
+      "ROC-AUC": 0.969,
+      "PR-AUC (Avg Precision)": 0.6745,
+      "False Positives (Alarms)": 1424,
+      "False Negatives (Missed)": 12,
+      "Training Time (s)": 67.76
+    }
+  ],
+  "top_features": [
+    {
+      "Feature": "V14",
+      "Importance": 0.1296604851546935
+    },
+    {
+      "Feature": "v10_v12_sum",
+      "Importance": 0.11536976088759518
+    },
+    {
+      "Feature": "V17",
+      "Importance": 0.11079545865715515
+    },
+    {
+      "Feature": "v4_v11_sum",
+      "Importance": 0.09937172731562251
+    },
+    {
+      "Feature": "V10",
+      "Importance": 0.08937576929925521
+    },
+    {
+      "Feature": "V4",
+      "Importance": 0.07631551056247352
+    },
+    {
+      "Feature": "V12",
+      "Importance": 0.0698928454685915
+    },
+    {
+      "Feature": "V11",
+      "Importance": 0.05404428675909334
+    },
+    {
+      "Feature": "V16",
+      "Importance": 0.02776910390492352
+    },
+    {
+      "Feature": "V3",
+      "Importance": 0.026441616855838602
+    }
+  ]
+}

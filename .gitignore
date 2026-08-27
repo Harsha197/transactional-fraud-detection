@@ -1,0 +1,26 @@
+# Virtual environment
+venv/
+
+# Antigravity
+.agents/
+
+# Python cache
+__pycache__/
+.pytest_cache/
+*.pyc
+.ipynb_checkpoints/
+
+# Environment files
+.env
+
+# Large datasets
+data/raw/*.csv
+data/processed/*.csv
+data/processed/*.db
+
+# Generated Power BI data
+powerbi/dashboard_data.csv
+
+# Model files
+models/*.pkl
+models/*.joblib
